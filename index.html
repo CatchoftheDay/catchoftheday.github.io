@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="status">Loading popup...</div>
+    <br />
+    <button id="open" onclick="javascript:openPopup()">Open</button>
+    <script>
+      function scriptReady() {
+        document.getElementById('status').innerHTML = 'Popup loaded';
+      }
+
+      function openPopup() {
+        window.cgws.club.openPopup({ email: 'club@catch.com.au' });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="/club.js?pkey=hi-there&onload=scriptReady"
+    ></script>
+  </body>
+</html>
