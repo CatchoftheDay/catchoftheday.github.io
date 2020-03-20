@@ -5,14 +5,15 @@
   <body>
     <div id="status">Loading popup...</div>
     <br />
-    <button id="open" onclick="javascript:openPopup()">Open</button>
+    <button id="open" onclick="javascript:openPopup('https://club-embed.rbt.cgws.com.au/')">Open RBT</button>
+    <button id="open" onclick="javascript:openPopup('http://localhost:3000/')">Open localhost</button>
     <script>
       function scriptReady() {
         document.getElementById('status').innerHTML = 'Popup loaded';
       }
 
-      function openPopup() {
-        window.cgws.club.openPopup({ email: 'club@catch.com.au' });
+      function openPopup(url) {
+        window.cgws.club.openPopup(url);
       }
     </script>
     <script

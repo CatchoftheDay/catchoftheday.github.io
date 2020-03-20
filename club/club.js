@@ -26,7 +26,7 @@
   // This code is served to the browser as-is and must support IE,
   // so keep it old-school.
 
-  var POPUP_URL = 'https://club-embed.rbt.cgws.com.au/';
+  var POPUP_URL = '';
   var PKEY = undefined;
   var ON_LOAD = undefined;
 
@@ -52,7 +52,8 @@
     window[ON_LOAD]();
   }
 
-  function openPopup() {
+  function openPopup(url) {
+    POPUP_URL = url
     if (!popup) {
       popup = createPopup();
     }
