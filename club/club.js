@@ -54,6 +54,10 @@
 
   function openPopup(url) {
     POPUP_URL = url
+    popupOrigin = POPUP_URL.split('/')
+      .slice(0, 3)
+      .join('/');
+      
     if (!popup) {
       popup = createPopup();
     }
