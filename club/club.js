@@ -30,7 +30,7 @@
   var PKEY = undefined;
   var ON_LOAD = undefined;
 
-  var HORIZONTAL_BUFFER = 0;
+  var HORIZONTAL_BUFFER = 20;
   var VERTICAL_BUFFER = 50;
 
   var popupOrigin = POPUP_URL.split('/')
