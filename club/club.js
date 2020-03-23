@@ -208,15 +208,13 @@
 
   function popupReady() {
     popup.ready = true;
-    if (popup.handle.options.email) {
-      popup.iframe.contentWindow.postMessage(
-        {
-          event: 'init',
-          payload: { pkey: PKEY, email: popup.handle.options.email }
-        },
-        popupOrigin
-      );
-    }
+    popup.iframe.contentWindow.postMessage(
+      {
+        event: 'init',
+        payload: { pkey: PKEY, email: popup.handle.options.email }
+      },
+      popupOrigin
+    );
 
     emitEvent(new CustomEvent('load'));
   }
