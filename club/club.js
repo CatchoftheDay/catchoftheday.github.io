@@ -211,7 +211,7 @@
     popup.iframe.contentWindow.postMessage(
       {
         event: 'init',
-        payload: { pkey: PKEY, email: popup.handle.options.email }
+        payload: { pkey: 'some-key', email: 'foo@email.com' }
       },
       popupOrigin
     );
