@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "author": "catchoftheday",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@catchoftheday/cg-components": "^0.0.0-043fedf"
+  }
 }
