@@ -1,0 +1,11 @@
+{
+  "name": "catchoftheday.github.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "catchoftheday",
+  "license": "MIT"
+}
